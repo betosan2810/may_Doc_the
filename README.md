@@ -35,6 +35,24 @@ Hệ thống bao gồm các chức năng:
 ## Sơ đồ nguyên lý
 ![image](https://github.com/betosan2810/may_Doc_the/assets/147693423/9efd742d-593b-421f-a0b9-7db3403955ef)
 
+## Thiết kế phần mềm
+### Xác định trạng thái nút bấm
+- Các nút bấm lên, xuống và menu được đọc trạng thái thông qua các cổng GPIO và sử dụng cơ chế ngắt để phát hiện thay đổi trạng thái.
+### Điều khiển màn hình LCD
+- Màn hình LCD I2C được điều khiển để hiển thị các thông báo và hướng dẫn cho người dùng.
+Ví dụ: Hiển thị thông báo chào mừng và yêu cầu người dùng nhập thẻ:
+![image](https://github.com/betosan2810/may_Doc_the/assets/147693423/2ca4c243-eb27-4bab-959f-e28d4897d886)
+### Đọc và ghi EEPROM
+- Bộ nhớ EEPROM được dùng để lưu trữ và quản lý danh sách thẻ RFID
+- Cơ chế đọc và ghi của EEPROM:
+  - Ô đầu tiên lưu trữ số lượng thẻ đã lưu
+  - 4 ô từ 1-4 chứa ID thẻ chủ 
+  - Các ô tiếp theo (4 ô 1 nhóm) để ghi ID từ các thẻ RFID
+![image](https://github.com/betosan2810/may_Doc_the/assets/147693423/55e6c236-c12a-4e6f-9e85-250b8dde3d93)
+   
+
+        
+
 ## Hướng dẫn sử dụng
 1. Quét thẻ chính để vào menu.
 2. Sử dụng nút 2 (Lên) và nút 3 (Xuống) để di chuyển qua các tùy chọn menu.
