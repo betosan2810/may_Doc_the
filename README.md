@@ -5,6 +5,8 @@ Dự án này sử dụng Arduino Uno, mô-đun RFID, LCD I2C và 3 nút ấn đ
 
 ## Linh kiện
 - Arduino Uno. Link mua sp: https://banlinhkien.com/kit-arduino-uno-r3-atmega16u2-p6649361.html
+  - Thông số kĩ thuật: ![image](https://github.com/betosan2810/may_Doc_the/assets/147693423/904e2016-a5f2-40e3-a14e-630033fc1987)
+
 - RFID module. Link mua sp: https://shopee.vn/product/310609561/5556546486?gad_source=1&gclid=Cj0KCQjwvb-zBhCmARIsAAfUI2tgg7-2gpE3SnYO4SnvqMnn6QeFs5iUURIvxFL_U16uilpsNGNkUaAaAhieEALw_wcB
 - LCD I2C. Link mua sp: https://nshopvn.com/product/lcd-1602-kem-module-i2c/?variant=117000&gad_source=1&gclid=Cj0KCQjwvb-zBhCmARIsAAfUI2uy6hofBDiI8MhrMTGIfjDDgzsIsVwzwOjqIQ43kNSC4gR9H5KtMFMaAjPAEALw_wcB
 - 3 nút ấn
@@ -49,8 +51,12 @@ Ví dụ: Hiển thị thông báo chào mừng và yêu cầu người dùng nh
   - 4 ô từ 1-4 chứa ID thẻ chủ 
   - Các ô tiếp theo (4 ô 1 nhóm) để ghi ID từ các thẻ RFID
 ![image](https://github.com/betosan2810/may_Doc_the/assets/147693423/55e6c236-c12a-4e6f-9e85-250b8dde3d93)
-   
-
+### Giao tiếp với cảm biến RFID
+- Sử dụng thư viện MFRC522 để giao tiếp với cảm biến RFID, đọc và xử lý dữ liệu từ các thẻ.
+### Quản lý menu và các chức năng
+- Sử dụng biến dem_tong để điều hướng giữa các mục trong menu và biến dem_menu để xác định mục đã chọn.
+### Xóa tất cả thẻ RFID
+- Menu cung cấp chức năng xóa toàn bộ thẻ RFID đã lưu trong EEPROM.
         
 
 ## Hướng dẫn sử dụng
@@ -66,5 +72,11 @@ Ví dụ: Hiển thị thông báo chào mừng và yêu cầu người dùng nh
 
 ## Mã nguồn
 Tất cả mã nguồn và tài liệu liên quan có thể được tìm thấy trong repository này.
+
+## Tác giả
+- Chu Việt Anh - 20214983
+- Nguyễn Trần Trung Kiên - 20215070
+- Đặng Hải Mai Linh - 20210529
+- Lê Quốc Việt - 20215165
 
 
