@@ -4,9 +4,9 @@
 Dự án này sử dụng Arduino Uno, mô-đun RFID, LCD I2C và 3 nút ấn để tạo ra một hệ thống quản lý thẻ RFID. Hệ thống cho phép thêm, xóa các thẻ RFID vào bộ nhớ EEPROM của Arduino và sử dụng một thẻ chính (master) để truy cập vào menu chính.
 
 ## Linh kiện
-- Arduino Uno
-- RFID module
-- LCD I2C
+- Arduino Uno. Link mua sp: https://banlinhkien.com/kit-arduino-uno-r3-atmega16u2-p6649361.html
+- RFID module. Link mua sp: https://shopee.vn/product/310609561/5556546486?gad_source=1&gclid=Cj0KCQjwvb-zBhCmARIsAAfUI2tgg7-2gpE3SnYO4SnvqMnn6QeFs5iUURIvxFL_U16uilpsNGNkUaAaAhieEALw_wcB
+- LCD I2C. Link mua sp: https://nshopvn.com/product/lcd-1602-kem-module-i2c/?variant=117000&gad_source=1&gclid=Cj0KCQjwvb-zBhCmARIsAAfUI2uy6hofBDiI8MhrMTGIfjDDgzsIsVwzwOjqIQ43kNSC4gR9H5KtMFMaAjPAEALw_wcB
 - 3 nút ấn
 
 ## Cách hoạt động
@@ -32,6 +32,8 @@ Hệ thống bao gồm các chức năng:
 - Thẻ phụ (slave):
   - UID: `35 4103 53`
   - UID: `1790607 251`
+## Sơ đồ nguyên lý
+![image](https://github.com/betosan2810/may_Doc_the/assets/147693423/9efd742d-593b-421f-a0b9-7db3403955ef)
 
 ## Hướng dẫn sử dụng
 1. Quét thẻ chính để vào menu.
